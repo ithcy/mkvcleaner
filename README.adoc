@@ -16,14 +16,35 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+== Overview
+
+StipMKVTitles removes certain metadata from Matroska (.mkv) video files.
+
+. Segment info title
+. Video track 1 name
+. Audio track 1 name
+
+Optionally, stripmkvtitles can set the first embedded subtitle track in your preferred language to default, so that subtitle track will automatically show when the video is opened in a video player that supports embedded subtitles, such as VLC.
+
 == Installation
 
-Run Setup.exe.
-
-Setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
+. Install MKVToolnix.
+.. This program depends on mkvpropedit.exe from the MKVToolnix package.
+. Run Setup.exe.
+.. Setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
 
 == Usage
 
-`/path/to/python /path/to/stripmkvtitles.py video1.mkv video2.mkv folder1 folder2 (...)`
+=== Windows Explorer
 
-=== options
+Right-click on any folder, or select one or more .mkv files iand right-click on one, and choose "Strip MKV Titles" from the context menu.
+
+=== CLI
+
+`stripmkvtitles <folder_or_file_path1> [<folder_or_file_path2> ...]`
+
+== Options
+
+Some options can be set in the config.toml file included with this distribution.
+
+`mkvtoolnix_path`: Specify the full path to the folder containing `mkvpropedit.exe` on your system, in case `mkvpropedit` is not found in your `PATH`. Typically `C:\\Program Files\\MKVToolNix`.
