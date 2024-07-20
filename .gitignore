@@ -12,3 +12,8 @@
 *.vsix
 
 *.code-workspace
+
+.pyinstaller/*
+build/*
+src/logo_pack
+test/original - Copy.mkv

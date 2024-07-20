@@ -1,11 +1,16 @@
-title = 'strip-mkv-titles settings'
+title = 'stripmkvtitles settings'
 
 [defaults]
+mkvpropedit_path='C:\\Program Files\\MKVToolNix\\mkvpropedit.exe'
+language = 'en'
+
 debug_mode = false
+
 # Whether or not to use color in the program output
 use_color = true
-language = 'en'
+
 # Whether or not to set the first subtitle track of that language as the default
 set_default_subtitle_track = true
+
 # Whether or not to pause and wait for user to press Enter before exiting
 pause_before_exit = true

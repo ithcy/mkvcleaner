@@ -18,7 +18,9 @@ endif::[]
 
 == Installation
 
-`pip install -r requirements.txt`
+Run Setup.exe.
+
+Setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
 
 == Usage
 
