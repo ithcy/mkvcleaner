@@ -1,4 +1,4 @@
-# StripMKVTitles
+# mkvcleaner
 :doctype: article
 :toclevels: 3
 :hide-uri-scheme:
@@ -18,13 +18,13 @@ endif::[]
 
 == Overview
 
-StipMKVTitles removes certain metadata from Matroska (.mkv) video files.
+mkvcleaner removes certain metadata from Matroska (.mkv) video files.
 
 . Segment info title
 . Video track 1 name
 . Audio track 1 name
 
-Optionally, stripmkvtitles can set the first embedded subtitle track in your preferred language to default, so that subtitle track will automatically show when the video is opened in a video player that supports embedded subtitles, such as VLC.
+Optionally, mkvcleaner can set the first embedded subtitle track in your preferred language to default, so that subtitle track will automatically show when the video is opened in a video player that supports embedded subtitles, such as VLC.
 
 == Installation
 
@@ -37,11 +37,11 @@ Optionally, stripmkvtitles can set the first embedded subtitle track in your pre
 
 === Windows Explorer
 
-Right-click on any folder, or select one or more .mkv files iand right-click on one, and choose "Strip MKV Titles" from the context menu.
+Right-click on any folder, or select one or more .mkv files iand right-click on one, and choose "mkvcleaner" from the context menu.
 
 === CLI
 
-`stripmkvtitles <folder_or_file_path1> [<folder_or_file_path2> ...]`
+`mkvcleaner <folder_or_file_path1> [<folder_or_file_path2> ...]`
 
 == Options
 

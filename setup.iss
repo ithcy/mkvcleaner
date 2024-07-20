@@ -1,76 +1,76 @@
 [Setup]
-AppName=Strip MKV Titles
+AppName=mkvcleaner
 AppVersion=1.0
-DefaultDirName={pf}\StripMKVTitles
+DefaultDirName={pf}\mkvcleaner
 DisableProgramGroupPage=yes
-UninstallDisplayIcon={app}\stripmkvtitles.exe
+UninstallDisplayIcon={app}\mkvcleaner.exe
 OutputDir=.
-OutputBaseFilename=SetupStripMKVTitles-x64
+OutputBaseFilename=Setupmkvcleaner-x64
 ArchitecturesInstallIn64BitMode=x64
 
 [Dirs]
 ; Create the directory in the local app data folder
-Name: "{localappdata}\StripMKVTitles"
+Name: "{localappdata}\mkvcleaner"
 
 [Files]
 ; Copy the executable to the program files directory
-Source: "dist\stripmkvtitles.exe"; DestDir: "{app}"
+Source: "dist\mkvcleaner.exe"; DestDir: "{app}"
 
 ; Copy config.toml to the local app data directory
-Source: "src\config.toml"; DestDir: "{localappdata}\StripMKVTitles"; Flags: ignoreversion
+Source: "src\config.toml"; DestDir: "{localappdata}\mkvcleaner"; Flags: ignoreversion
 
 ; Create an empty log file in the local app data directory
-Source: "src\stripmkvtitles.log"; DestDir: "{localappdata}\StripMKVTitles"; Flags: ignoreversion
+Source: "src\mkvcleaner.log"; DestDir: "{localappdata}\mkvcleaner"; Flags: ignoreversion
 
 
 [Registry]
 ; Add context menu entry for folders
 
-Root: HKCR; Subkey: "Directory\Background\shell\StripMKVTitles"; \
+Root: HKCR; Subkey: "Directory\Background\shell\mkvcleaner"; \
 ValueType: string; \
 ValueName: ""; \
-ValueData: "&Strip MKV Titles"; \
+ValueData: "&mkvcleaner"; \
 Flags: createvalueifdoesntexist
 
-Root: HKCR; Subkey: "Directory\Background\shell\StripMKVTitles\command"; \
+Root: HKCR; Subkey: "Directory\Background\shell\mkvcleaner\command"; \
 ValueType: string; \
 ValueName: ""; \
-ValueData: """{app}\stripmkvtitles.exe"""; \
+ValueData: """{app}\mkvcleaner.exe"""; \
 Flags: createvalueifdoesntexist
 
 
-Root: HKCR; Subkey: "Directory\shell\StripMKVTitles"; \
+Root: HKCR; Subkey: "Directory\shell\mkvcleaner"; \
 Flags: createvalueifdoesntexist
 
-Root: HKCR; Subkey: "Directory\shell\StripMKVTitles"; \
+Root: HKCR; Subkey: "Directory\shell\mkvcleaner"; \
 ValueType: string; \
 ValueName: ""; \
-ValueData: "&Strip MKV Titles"; \
+ValueData: "&mkvcleaner"; \
 Flags: createvalueifdoesntexist
 
-Root: HKCR; Subkey: "Directory\shell\StripMKVTitles\command"; \
+Root: HKCR; Subkey: "Directory\shell\mkvcleaner\command"; \
 ValueType: string; \
 ValueName: ""; \
-ValueData: """{app}\stripmkvtitles.exe"" ""%1"""; \
+ValueData: """{app}\mkvcleaner.exe"" ""%1"""; \
 Flags: createvalueifdoesntexist
 
-Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\Strip MKV Titles"; \
+Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\mkvcleaner"; \
 Flags: createvalueifdoesntexist
 
-Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\Strip MKV Titles\command"; \
+Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\mkvcleaner\command"; \
 ValueType: string; \
 ValueName: ""; \
-ValueData: """{app}\stripmkvtitles.exe"" ""%1"""; \
+ValueData: """{app}\mkvcleaner.exe"" ""%1"""; \
 Flags: createvalueifdoesntexist
 
 
 [Icons]
-Name: "{group}\Strip MKV Titles"; Filename: "{app}\stripmkvtitles.exe"
+Name: "{group}\mkvcleaner"; Filename: "{app}\mkvcleaner.exe"
 
 [UninstallDelete]
 Type: filesandordirs; Name: "{app}\*.*"
 
 [Registry]
-Root: HKCR; Subkey: "Directory\Background\shell\StripMKVTitles"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "Directory\shell\StripMKVTitles"; Flags: uninsdeletekey
-Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\Strip MKV Titles";  Flags: uninsdeletekey
+Root: HKCR; Subkey: "Directory\Background\shell\mkvcleaner"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "Directory\shell\mkvcleaner"; Flags: uninsdeletekey
+Root: HKCR; Subkey: "SystemFileAssociations\.mkv\Shell\mkvcleaner";  Flags: uninsdeletekey
