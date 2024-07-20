@@ -1,0 +1,27 @@
+# StripMKVTitles
+:doctype: article
+:toclevels: 3
+:hide-uri-scheme:
+:icons: font
+:idprefix:
+:idseparator: -
+:source-language: shell
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:status:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :information_source:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+== Installation
+
+`pip install -r requirements.txt`
+
+== Usage
+
+`/path/to/python /path/to/stripmkvtitles.py video1.mkv video2.mkv folder1 folder2 (...)`
+
+=== options
