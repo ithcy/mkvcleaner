@@ -7,11 +7,11 @@ from pathlib import Path
 import tomlkit
 from terminology import *
 from langcodes import *
-from config import config
+from mkvcleanerconfig import mkvcleanerconfig
 
 def process_file(file_path, track_id=1):
     try:
-        mkvtoolnix_path = config.get('mkvtoolnix_path')
+        mkvtoolnix_path = mkvcleanerconfig.get('mkvtoolnix_path')
         mkvtoolnix = f'{mkvtoolnix_path}{os.sep}mkvpropedit.exe'
         result = subprocess.run([
             mkvtoolnix,
@@ -57,7 +57,7 @@ def main():
         elif os.path.isdir(arg):
             process_folder(arg)
 
-    if config.get('pause_before_exit'):
+    if mkvcleanerconfig.get('pause_before_exit'):
         x = input("\nPress Enter to exit:")
     sys.exit()
 

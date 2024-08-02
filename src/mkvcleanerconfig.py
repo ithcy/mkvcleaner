@@ -11,4 +11,4 @@ class Config:
     def get(self, key, default=None):
         return self.config.get(key, default)
 
-config = Config('config.toml')
+mkvcleanerconfig = Config('config.toml')
