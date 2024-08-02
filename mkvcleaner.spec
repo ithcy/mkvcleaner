@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['src\\mkvcleaner.py'],
+    ['src\\main.py', 'src\\config.py'],
     pathex=[],
     binaries=[],
     datas=[('src/config.toml', '.')],

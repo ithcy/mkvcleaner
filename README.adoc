@@ -48,3 +48,12 @@ Right-click on any folder, or select one or more .mkv files iand right-click on 
 Some options can be set in the config.toml file included with this distribution.
 
 `mkvtoolnix_path`: Specify the full path to the folder containing `mkvpropedit.exe` on your system, in case `mkvpropedit` is not found in your `PATH`. Typically `C:\\Program Files\\MKVToolNix`.
+
+
+== Notes
+
+`pip install pyinstaller`
+
+`pyinstaller .\mkvcleaner.spec --distpath .\dist\ --workpath .pyinstaller`
+
+`pyi-set_version.exe .\file_version_info.txt .\dist\mkvcleaner.exe`

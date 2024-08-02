@@ -1,6 +1,6 @@
 [Setup]
 AppName=mkvcleaner
-AppVersion=1.0
+AppVersion=1.0.1
 DefaultDirName={pf}\mkvcleaner
 DisableProgramGroupPage=yes
 UninstallDisplayIcon={app}\mkvcleaner.exe

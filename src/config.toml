@@ -1,6 +1,5 @@
 title = 'mkvcleaner settings'
 
-[defaults]
 mkvtoolnix_path='C:\Program Files\MKVToolNix'
 language = 'en'
 
