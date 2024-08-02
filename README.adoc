@@ -37,7 +37,7 @@ Optionally, mkvcleaner can set the first embedded subtitle track in your preferr
 
 === Windows Explorer
 
-Right-click on any folder, or select one or more .mkv files iand right-click on one, and choose "mkvcleaner" from the context menu.
+Right-click on any folder, or select one or more .mkv files and right-click on one, and choose "mkvcleaner" from the context menu.
 
 === CLI
 
