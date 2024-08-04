@@ -1,17 +1,13 @@
-import json
 import logging
 import os
 import subprocess
 import sys
-from pathlib import Path
-import tomlkit
-from terminology import *
 from langcodes import *
 from mkvcleanerconfig import mkvcleanerconfig
 
 def process_file(file_path, track_id=1):
     try:
-        mkvtoolnix_path = mkvcleanerconfig.get('mkvtoolnix_path')
+        mkvtoolnix_path = mkvcleanerconfig.get('mkvtoolnix_path', 'C:\\Program Files\\MKVToolNix')
         mkvtoolnix = f'{mkvtoolnix_path}{os.sep}mkvpropedit.exe'
         result = subprocess.run([
             mkvtoolnix,
@@ -57,7 +53,7 @@ def main():
         elif os.path.isdir(arg):
             process_folder(arg)
 
-    if mkvcleanerconfig.get('pause_before_exit'):
+    if mkvcleanerconfig.get('pause_before_exit', True):
         x = input("\nPress Enter to exit:")
     sys.exit()
 

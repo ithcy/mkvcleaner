@@ -5,7 +5,7 @@ DefaultDirName={pf}\mkvcleaner
 DisableProgramGroupPage=yes
 UninstallDisplayIcon={app}\mkvcleaner.exe
 OutputDir=.
-OutputBaseFilename=Setupmkvcleaner-x64
+OutputBaseFilename=Setup-mkvcleaner-x64
 ArchitecturesInstallIn64BitMode=x64
 
 [Dirs]

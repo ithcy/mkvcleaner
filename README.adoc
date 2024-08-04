@@ -30,7 +30,7 @@ Optionally, mkvcleaner can set the first embedded subtitle track in your preferr
 
 . Install MKVToolnix.
 .. This program depends on mkvpropedit.exe from the MKVToolnix package.
-. Run Setup.exe.
+. Run Setup-mkvcleaner-x64.exe.
 .. Setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
 
 == Usage
@@ -45,7 +45,7 @@ Right-click on any folder, or select one or more .mkv files and right-click on o
 
 == Options
 
-Some options can be set in the config.toml file included with this distribution.
+Some options can be set in the config.json file included with this distribution. This file can be found in `%LOCALAPPDATA\mkvcleaner` after install.
 
 `mkvtoolnix_path`: Specify the full path to the folder containing `mkvpropedit.exe` on your system, in case `mkvpropedit` is not found in your `PATH`. Typically `C:\\Program Files\\MKVToolNix`.
 

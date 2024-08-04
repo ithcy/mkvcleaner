@@ -2,11 +2,11 @@
 
 
 a = Analysis(
-    ['src\\main.py', 'src\\config.py'],
+    ['src\\main.py', 'src\\mkvcleanerconfig.py'],
     pathex=[],
     binaries=[],
-    datas=[('src/config.toml', '.')],
-    hiddenimports=['tomlkit', 'terminology', 'langcodes'],
+    datas=[('src/config.json', '.')],
+    hiddenimports=['langcodes'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
