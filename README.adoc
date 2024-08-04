@@ -18,20 +18,19 @@ endif::[]
 
 == Overview
 
-mkvcleaner removes certain metadata from Matroska (.mkv) video files.
+mkvcleaner is a WIndows utility that removes certain metadata from Matroska (.mkv) video files.
 
-. Segment info title
-. Video track 1 name
+. Segment info title (the "main" title that displays when opening the video in a player)
+. Video track 1 name (the name of the video track that shows in player menus)
 . Audio track 1 name
 
 Optionally, mkvcleaner can set the first embedded subtitle track in your preferred language to default, so that subtitle track will automatically show when the video is opened in a video player that supports embedded subtitles, such as VLC.
 
 == Installation
 
-. Install MKVToolnix.
-.. This program depends on mkvpropedit.exe from the MKVToolnix package.
-. Run Setup-mkvcleaner-x64.exe.
-.. Setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
+. Install link:https://mkvtoolnix.download[MKVToolnix]. This program depends on mkvpropedit.exe from the MKVToolnix package.
+
+. Run Setup-mkvcleaner-x64.exe. Note that setup needs administrator privileges in order to modify the registry to add Explorer context menu entries.
 
 == Usage
 
@@ -45,9 +44,9 @@ Right-click on any folder, or select one or more .mkv files and right-click on o
 
 == Options
 
-Some options can be set in the config.json file included with this distribution. This file can be found in `%LOCALAPPDATA\mkvcleaner` after install.
+Some options can be set in the config.json file included with this distribution. This file can be found in `%LOCALAPPDATA%\mkvcleaner` after install.
 
-`mkvtoolnix_path`: Specify the full path to the folder containing `mkvpropedit.exe` on your system, in case `mkvpropedit` is not found in your `PATH`. Typically `C:\\Program Files\\MKVToolNix`.
+`mkvtoolnixPath`: Specify the full path to the folder containing `mkvpropedit.exe` on your system, in case `mkvpropedit` is not found in your `PATH`. Typically `C:\\Program Files\\MKVToolNix`.
 
 
 == Notes
