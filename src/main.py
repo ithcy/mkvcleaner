@@ -7,7 +7,7 @@ from mkvcleanerconfig import mkvcleanerconfig
 
 def process_file(file_path, track_id=1):
     try:
-        mkvtoolnix_path = mkvcleanerconfig.get('mkvtoolnix_path', 'C:\\Program Files\\MKVToolNix')
+        mkvtoolnix_path = mkvcleanerconfig.get('mkvtoolnixPath', 'C:\\Program Files\\MKVToolNix')
         mkvtoolnix = f'{mkvtoolnix_path}{os.sep}mkvpropedit.exe'
         result = subprocess.run([
             mkvtoolnix,
@@ -53,7 +53,7 @@ def main():
         elif os.path.isdir(arg):
             process_folder(arg)
 
-    if mkvcleanerconfig.get('pause_before_exit', True):
+    if mkvcleanerconfig.get('pauseBeforeExit', True):
         x = input("\nPress Enter to exit:")
     sys.exit()
 

@@ -1,9 +1,8 @@
 {
     "title": "mkvcleaner settings",
-    "mkvtoolnix_path": "C:\\Program Files\\MKVToolNix",
+    "mkvtoolnixPath": "C:\\Program Files\\MKVToolNix",
     "language": "en",
-    "debug_mode": false,
-    "use_color": true,
-    "set_default_subtitle_track": true,
-    "pause_before_exit": true
+    "debugMode": false,
+    "setDefaultSubtitleTrack": true,
+    "pauseBeforeExit": true
 }
