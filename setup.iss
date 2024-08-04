@@ -1,6 +1,6 @@
 [Setup]
 AppName=mkvcleaner
-AppVersion=1.0.1
+AppVersion=1.0.3-pre
 DefaultDirName={pf}\mkvcleaner
 DisableProgramGroupPage=yes
 UninstallDisplayIcon={app}\mkvcleaner.exe
@@ -17,7 +17,7 @@ Name: "{localappdata}\mkvcleaner"
 Source: "dist\mkvcleaner.exe"; DestDir: "{app}"
 
 ; Copy config.toml to the local app data directory
-Source: "src\config.toml"; DestDir: "{localappdata}\mkvcleaner"; Flags: ignoreversion
+Source: "src\config.json"; DestDir: "{localappdata}\mkvcleaner"; Flags: ignoreversion
 
 ; Create an empty log file in the local app data directory
 Source: "src\mkvcleaner.log"; DestDir: "{localappdata}\mkvcleaner"; Flags: ignoreversion

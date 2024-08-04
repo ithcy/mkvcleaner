@@ -4,7 +4,7 @@
 a = Analysis(
     ['src\\main.py', 'src\\mkvcleanerconfig.py'],
     pathex=[],
-    binaries=[],
+    binaries=['dist\\mkvcleaner.exe'],
     datas=[('src/config.json', '.')],
     hiddenimports=['langcodes'],
     hookspath=[],
